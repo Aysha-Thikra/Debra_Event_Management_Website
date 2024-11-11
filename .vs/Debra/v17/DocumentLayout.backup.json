@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\h\\Desktop\\SOC\\Assignment\\Debra\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BE86FED4-3B09-41AF-B4F7-AB4045A54FBE}|Debra\\Debra.csproj|c:\\users\\h\\desktop\\soc\\assignment\\debra\\debra\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{BE86FED4-3B09-41AF-B4F7-AB4045A54FBE}|Debra\\Debra.csproj|solutionrelative:debra\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.aspx",
+              "DocumentMoniker": "C:\\Users\\h\\Desktop\\SOC\\Assignment\\Debra\\Debra\\index.aspx",
+              "RelativeDocumentMoniker": "Debra\\index.aspx",
+              "ToolTip": "C:\\Users\\h\\Desktop\\SOC\\Assignment\\Debra\\Debra\\index.aspx",
+              "RelativeToolTip": "Debra\\index.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-10-02T08:12:50.622Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

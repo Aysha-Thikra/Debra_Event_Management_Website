@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="guest.master.cs" Inherits="Debra.GuestPage.guest" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="../Boostrap/css/about-us.css" rel="stylesheet" />
+    <link href="../Boostrap/css/contact-us.css" rel="stylesheet" />
+    <link href="../Boostrap/css/event.css" rel="stylesheet" />
+    <link href="../Boostrap/css/feedback.css" rel="stylesheet" />
+    <link href="../Boostrap/css/review.css" rel="stylesheet" />
+    <link href="../Boostrap/css/styles.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event - Debra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="../images/logo.png" type="image/x-icon">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <header>
+                <div class="logo">
+                    <img src="../images/logo.png" alt="Debra Logo" class="logo-img">
+                    <div class="logo-text">DEBRA</div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="../index.aspx" class="nav-link">Home</a></li>
+                        <li><a href="event.aspx" class="nav-link">Events</a></li>
+                        <li><a href="about-us.aspx" class="nav-link">About Us</a></li>
+                        <li><a href="contact-us.aspx" class="nav-link">Contact Us</a></li>
+                        <li><a href="review.aspx" class="nav-link">Review</a></li>
+                        <li><a href="../login.aspx" class="nav-btn" style="text-decoration:none;">Become a partner</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

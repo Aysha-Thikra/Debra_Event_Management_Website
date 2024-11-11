@@ -1,0 +1,233 @@
+:root {
+    --dark-green: #1A3636;
+    --beige: #D6BD98;
+    --light-green: #677D6A;
+    --lighter-green: #40534C;
+    --white: #FFFFFF;
+    --light-gray: #F5F5F5;
+}
+
+/* About Section Styles */
+.about {
+    background-color: var(--light-gray);
+    padding: 40px 20px;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 50%;
+    float: left; 
+}
+
+.about h2 {
+    font-size: 2.5em;
+    color: var(--dark-green);
+    margin-bottom: 20px;
+    padding-left: 50px;
+}
+
+.about-description {
+    font-size: 1.2em; 
+    line-height: 1.6; 
+    color: var(--lighter-green);
+    text-align: left; 
+    margin: 20px 0; 
+    max-width: 800px; 
+    padding: 0 0 0 50px; 
+}
+
+.about-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    max-width: 50%; 
+    float: right; 
+    margin-right: 100px;
+}
+
+.about-image {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-hr {
+    border: 0;
+    height: 2px;
+    background-color: var(--dark-green); 
+    margin: 50px 0 30px 0; 
+    width: 80%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.custom-hr-1 {
+    border: 0;
+    height: 2px;
+    background-color: var(--light-gray); 
+    margin: 50px 0 30px 0; 
+    width: 80%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+h3.vision-mission {
+    font-size: 2.5em; 
+    font-family: 'Pacifico', cursive; 
+    color: var(--dark-green); 
+    text-align: center; 
+    margin: 20px 0; 
+    letter-spacing: 1px; 
+    clear: both; 
+}
+
+.about-values-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.value-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 220px;
+}
+
+    .value-card i {
+        color: var(--light-green);
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .value-card h4 {
+        font-size: 1.2em;
+        color: var(--dark-green);
+        margin: 10px 0;
+    }
+
+    .value-card p {
+        font-size: 0.9em;
+        color: var(--dark-green);
+        line-height: 1.4;
+    }
+
+.vision-mission-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.vision-card, .mission-card {
+    background-color: var(--dark-green);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 220px;
+}
+
+    .vision-card i, .mission-card i {
+        color: var(--white);
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .vision-card h4, .mission-card h4 {
+        font-size: 1.2em;
+        color: var(--white);
+        margin: 10px 0;
+    }
+
+    .vision-card p, .mission-card p {
+        font-size: 0.9em;
+        color: var(--white);
+        line-height: 1.4;
+    }
+
+.team-description {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: var(--lighter-green);
+    text-align: center;
+    margin: 20px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+.team-profiles {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.profile {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+}
+
+    .profile img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 15px;
+    }
+
+    .profile h4 {
+        font-size: 1.2em;
+        color: var(--dark-green);
+        margin: 5px 0;
+    }
+
+    .profile p {
+        font-size: 0.9em;
+        color: var(--light-green);
+    }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-content, .about-images {
+        flex-direction: column;
+        max-width: 100%;
+        float: none; 
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .about-description {
+        text-align: center;
+    }
+
+    .vision-mission-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .team-profiles {
+        flex-direction: column;
+    }
+}

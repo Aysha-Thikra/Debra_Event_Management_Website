@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DebraDashboard.master.cs" Inherits="Debra.DebraDashboard.DebraDashboard" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debra - Admin Dashboard</title>
+    <link href="../Boostrap/css/DebraDashboard.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="../images/logo.png" type="image/x-icon">
+    <script src="../Scripts/active.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <div class="sidebar">
+            <div class="logo">DEBRA</div>
+            <ul class="sidebar-menu">
+                <li><a href="DebraDashboard.aspx" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="manage-events.aspx"><i class="fas fa-calendar-alt"></i> Manage Events</a></li>
+                <li><a href="manage-tickets.aspx"><i class="fas fa-ticket-alt"></i> Manage Tickets</a></li>
+                <li><a href="sold-tickets.aspx"><i class="fas fa-calendar-check"></i> Sold Tickets</a></li>
+                <li><a href="manage-partners.aspx"><i class="fas fa-users"></i> Manage Partners</a></li>
+                <li><a href="manage-sales.aspx"><i class="fas fa-chart-line"></i> Manage Sales</a></li>
+                <li><a href="earnings.aspx"><i class="fas fa-dollar-sign"></i> Earnings</a></li>
+                <li><a href="manage-commissions.aspx"><i class="fas fa-percent"></i> Manage Commissions</a></li>
+                <li><a href="../login.aspx"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

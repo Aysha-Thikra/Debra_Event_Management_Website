@@ -1,0 +1,120 @@
+:root {
+    --dark-green: #1A3636;
+    --beige: #D6BD98;
+    --light-green: #677D6A;
+    --lighter-green: #40534C;
+    --white: #FFFFFF;
+    --light-gray: #F5F5F5;
+}
+
+/* Review Section Styling */
+.reviews {
+    padding: 0px 40px 40px 40px;
+    background-color: var(--light-gray);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.review-header h3 {
+    font-size: 34px;
+    font-weight: 600;
+    color: var(--dark-green);
+}
+
+.feedback-btn {
+    background-color: var(--light-green);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.feedback-btn:hover {
+    background-color: var(--lighter-green);
+}
+
+/* Grid Layout for Feedback Cards */
+.feedback-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+}
+
+.feedback-card {
+    background-color: var(--white);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+/* Card Header */
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-img {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%; 
+    margin-right: 15px; 
+    object-fit: cover;
+}
+
+.feedback-card h4 {
+    font-size: 18px;
+    font-weight: 600; 
+    color: var(--light-green);
+    margin: 0; 
+}
+
+/* Star Rating Styling */
+.stars {
+    margin-bottom: 10px;
+}
+
+.stars i {
+    margin-right: 5px; 
+    font-size: 18px; 
+}
+
+/* Card Footer */
+.feedback-card .card-footer {
+    font-size: 12px; 
+    color: var(--lighter-green); 
+    text-align: right; 
+    font-style: italic; 
+}
+
+/* Card Hover Effect */
+.feedback-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15); 
+}
+
+/* Make Cards Responsive */
+@media (max-width: 992px) {
+    .feedback-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .feedback-grid {
+        grid-template-columns: 1fr;
+    }
+}

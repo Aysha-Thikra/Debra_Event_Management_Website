@@ -1,0 +1,274 @@
+:root {
+    --dark-purple: #49243E;
+    --medium-purple: #704264;
+    --light-purple: #BB8493;
+    --beige: #DBAFA0;
+}
+
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--beige);
+    display: flex;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background-color: var(--dark-purple);
+    color: var(--beige);
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--light-purple);
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sidebar-menu li {
+    border-bottom: 1px solid var(--medium-purple);
+}
+
+.sidebar-menu li a {
+    text-decoration: none;
+    color: var(--beige);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+
+.sidebar-menu li a i {
+    margin-right: 10px;
+}
+
+.sidebar-menu li a:hover,
+.sidebar-menu li a.active {
+    background-color: var(--medium-purple);
+    color: var(--beige);
+}
+
+/* Main Content Styling */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+    min-height: 100vh;
+    background-color: var(--beige);
+}
+
+
+/* Header Styling */
+.header {
+    background-color: var(--dark-purple);
+    color: var(--beige);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--medium-purple);
+}
+
+/* Card Container */
+.card-container, .card-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: var(--medium-purple);
+    outline: none;
+}
+
+/* Button Styles */
+.submit-btn {
+    background-color: var(--medium-purple);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--light-purple);
+}
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.ticket-card {
+    background: linear-gradient(135deg, var(--dark-purple), var(--light-purple));
+    color: var(--beige);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px; 
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn {
+    background-color: var(--medium-purple);
+    color: var(--beige);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: var(--light-purple);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.event-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    padding: 15px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.event-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.event-poster {
+    width: 100%;
+    height: auto; 
+    border-radius: 5px; 
+}
+
+.edit-btn, .delete-btn {
+    background-color: #49243E;
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    background-color: #704264; 
+}
+
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.ticket-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    padding: 15px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.ticket-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.edit-btn, .delete-btn {
+    background-color: #49243E; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 15px; 
+    cursor: pointer;
+    margin-right: 5px; 
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    background-color: #704264; 
+}
+

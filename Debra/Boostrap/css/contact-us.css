@@ -1,0 +1,135 @@
+:root {
+    --dark-green: #1A3636;
+    --beige: #D6BD98;
+    --light-green: #677D6A;
+    --lighter-green: #40534C;
+    --white: #FFFFFF;
+    --light-gray: #F5F5F5;
+}
+
+.contact {
+    background-color: var(--light-gray);
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    color: var(--dark-green);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.contact p {
+    font-size: 1.2em;
+    color: var(--lighter-green);
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    font-weight: bold;
+    color: var(--dark-green);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--lighter-green);
+    border-radius: 20px; 
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--lighter-green); 
+    font-style: italic;
+    font-size: smaller;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--beige);
+    outline: none;
+}
+
+.submit-button {
+    background-color: var(--dark-green);
+    color: var(--beige);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 20px; 
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-button:hover {
+    background-color: var(--lighter-green);
+    transform: translateY(-2px);
+}
+
+.contact-info {
+    background-color: var(--light-gray);
+    border-radius: 10px; 
+    padding: 20px;
+    margin: 20px 0; 
+    text-align: left; 
+}
+
+.contact-info h3 {
+    font-size: 26px; 
+    color: var(--dark-green); 
+    margin-bottom: 10px; 
+    font-family: 'Cursive', sans-serif; 
+    font-weight: bold; 
+    line-height: 1.4; 
+}
+
+
+
+.contact-info p {
+    margin-bottom: 15px; 
+    text-align: center;
+}
+
+.contact-card {
+    display: flex; 
+    justify-content: space-between; 
+    background-color: var(--light-green); 
+    border-radius: 10px; 
+    padding: 15px; 
+}
+
+.contact-item {
+    flex: 1; 
+    text-align: center; 
+}
+
+.contact-item i {
+    font-size: 24px; 
+    color: var(--white); 
+    margin-bottom: 5px; 
+}
+
+.contact-item p {
+    font-size: 16px; 
+    color: var(--white); 
+}
